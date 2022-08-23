@@ -156,7 +156,7 @@ public class PatientPage {
     @FindBy(className = "Toastify__toast-body")
     public WebElement passwordChanged;
 
-<<<<<<< HEAD
+
     @FindBy(xpath ="//*[text()='28/08/22 02:00']" )
     public WebElement dateTime;
 
@@ -168,7 +168,7 @@ public class PatientPage {
 
     @FindBy(xpath ="//*[text()='UNAPPROVED']" )
     public WebElement status;
-=======
+
 
  //Bayram 160-219
 
@@ -287,7 +287,6 @@ public class PatientPage {
     @FindBy (xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
     public WebElement HataYazisi;
 
->>>>>>> main
 
 }
 
