@@ -1,7 +1,8 @@
-Feature: Country okuma,olusturma,guncelleme ve silme islemleri
-  Scenario: Country okuma
+@ApiCountry
+Feature: Country Okuma, Olusturma, Guncelleme ve Silme
 
-  Given Kullanici country icin get request yapar
+  Scenario:Country Okuma
+    * kullanici medunna apiden "https://www.medunna.com/api/countries" ulke bilgilerini okur
 
 
   Scenario Outline:Country olusturma
@@ -9,18 +10,18 @@ Feature: Country okuma,olusturma,guncelleme ve silme islemleri
 
     Examples: country olusturma
       |idJson|nameJson|
-      |123212|PapuaYeniGine|
+      |name|ANGARA|
 
   Scenario Outline:Coutry Guncelleme
     * kullanici api end point "https://www.medunna.com/api/countries/" den "<id>" ve "<name>" kullanarak guncelleme yapar
 
     Examples: country guncelleme
       |id|name|
-      |216030|Lithuania|
+      |80061|ANKARA|
 
   Scenario Outline:Country Silme
     * kullanici endpoint "<endPoint>" ve id ile "<id>" ulke siler
 
     Examples: country silme
       |endPoint|id|
-      |https://www.medunna.com/api/countries/|210638|
+      |https://www.medunna.com/api/countries/|80061|
